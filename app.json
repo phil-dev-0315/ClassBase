@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "ClassBase",
+    "slug": "classbase",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFBEB"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.classbase.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "ClassBase needs camera access to scan student QR codes for attendance tracking."
+      }
+    },
+    "android": {
+      "package": "com.classbase.app",
+      "permissions": ["android.permission.CAMERA"],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFBEB"
+      }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "ClassBase needs camera access to scan student QR codes for attendance tracking."
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
